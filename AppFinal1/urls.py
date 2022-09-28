@@ -7,6 +7,8 @@ urlpatterns = [
     path("bikesinfo/", bikesinfo, name="Biclas"),
     path("racingevent/", racingevent, name="Races"),
     path("ridersinfoForm/", ridersinfoForm, name="RidersinfoForm"),
+     path("bikesinfoForm/", bikesinfoForm, name="BikesinfoForm"),
+    path("racingeventForm/", racingeventForm, name="RacingeventForm"),
     path("searchEvent/", searchEvent, name="SearchEvent"), 
     path("results/", results, name="SearchResults"),
 ]
