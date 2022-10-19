@@ -7,16 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-
-    <form action="" enctype="multipart/form-data" method="POST"> {% csrf_token %}
-
-        <table>
-            {{form3.as_table}}
-        </table>
-
-        <input type="submit" value="Confirmar">
-
     
+    <form action="/AppFinal1/resultsRider/" method="GET">
+
+        <input type="text" name="name" id="name">
+
+        <input type="submit" value="Buscar">
+
+
     </form>
 
 

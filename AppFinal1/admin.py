@@ -6,3 +6,4 @@ from AppFinal1.models import *
 admin.site.register(RiderInfo)
 admin.site.register(Bikeinfo)
 admin.site.register(RacingEvent)
+admin.site.register(Avatar)

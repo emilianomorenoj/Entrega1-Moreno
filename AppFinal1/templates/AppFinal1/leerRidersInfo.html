@@ -1,0 +1,40 @@
+{% extends "AppFinal1/padre.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Info acercra de todos los Riders:
+
+{% endblock %}
+
+{% block description %}
+
+    {% for rider in Riders %}
+
+    <p>Nombre: {{rider.name}}</p>
+    <p>Fecha de nacimiento: {{rider.dateofbirth}}</p>
+    <p>Email: {{rider.email}}</p>
+
+    <button>
+        <a href="{% url 'EditarRider' rider.name %}"> Editar Rider </a>
+    </button>
+
+    <button>
+        <a href="{% url 'EliminarRider' rider.name %}"> Eliminar Rider </a>
+    </button>
+
+    {% endfor %}
+    
+
+    <br>
+
+    --------------------------------
+
+    <br>
+
+    <a href="{% url 'RidersinfoForm' %}"> Crear Rider </a>
+
+{% endblock %}

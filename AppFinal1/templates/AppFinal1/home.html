@@ -6,6 +6,32 @@
 
 {% block title %}
 
-Transnavajas MTB Racing 2022
+COMMENCAL EnduroProject RacingTeam
+
+<br> ----------------------- </br>
+
+{% endblock %}
+
+{% block description %}
+
+<form action="/AppFinal1/resultsRider/" method="GET">
+
+    <input type="text" name="name" id="name">
+
+    <input type="submit" value="Buscar Rider">
+
+
+</form>
+
+<body>
+    
+
+    {% for rider in riders %}
+        <p> Fecha nacimiento: {{rider.dateofbirth}}</p>
+        <p> Email: {{rider.email}} </p>
+    {% endfor %}
+
+</body>
+
 
 {% endblock %}

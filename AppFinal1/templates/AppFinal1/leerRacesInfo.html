@@ -1,0 +1,36 @@
+{% extends "AppFinal1/padre.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Info acerca de las próximas carreras:
+
+<br> ------------------------------- </br>
+
+{% endblock %}
+
+{% block description %}
+
+<a href="{% url 'RacingeventForm' %}"> </a>
+
+{% for race in races %}
+
+    <p>Racing Event : {{race.racingevent}}</p>
+    <p>Race Level : {{race.racelevel}}</p>
+
+    <img src="{{race.imagen.url}}" alt="no hay imagen">
+  
+    <br> ------------------------------- </br>
+
+{% endfor %}
+
+
+<button>
+    <a href="{% url 'RacingeventForm' %}"> Agregar Evento </a>
+</button>    
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "AppFinal1/padre.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Regístrate :) 
+
+{% endblock %}
+
+{% block description %}
+
+<form action="" method="POST">
+    
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <button type="submit">Registrarse</button>
+
+</form>    
+
+{% endblock %}

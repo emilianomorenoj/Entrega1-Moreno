@@ -1,0 +1,25 @@
+{% extends "AppFinal1/padre.html" %}
+
+
+{% load static %}
+
+
+{% block title %}
+
+Acá puedes editar tu perfil :)
+
+{% endblock %}
+
+{% block description %}
+
+<form action="" method="POST">
+    
+    {% csrf_token %}
+
+    {{formulario.as_p}}
+
+    <button type="submit">Editar</button>
+
+</form>    
+
+{% endblock %}
